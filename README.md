@@ -1,7 +1,7 @@
 
 # DevOps Journey
 
-This repo documents my learning path into DevOps.
+My name is Tlotliso Ledwaba and this is a repo documenting my learning path into DevOps.
 It includes notes, scripts, and projects built along the way.
 
 ## Current Phase
