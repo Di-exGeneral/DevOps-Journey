@@ -4,6 +4,8 @@
 My name is Tlotliso Ledwaba and this is a repo documenting my learning path into DevOps.
 It includes notes, scripts, and projects built along the way.
 
+I'll be using Trunk-based development instead of Gitflow for this journey
+
 ## Current Phase
 Phase 1: Git fundamentals
 
