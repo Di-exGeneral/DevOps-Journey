@@ -75,3 +75,33 @@ The syntax is as follows:
 - `?` is the number of a process
 
 
+## 3) FILE SYSTEM
+Linux is operates using files and each file has it's own category, from configuration files to personal files.
+
+These are all linux directories and their categories
+      
+    /etc     = configuration files
+    /var     = logs and variable data
+    /home    = user personal folders
+    /tmp     = temporary files, cleared on reboot
+    /bin     = essential system commands
+    /usr     = user installed programs
+    /root    = root user's home folder
+    /proc    = live kernel and process info
+    /opt     = third party software
+
+
+For now I only focused on `/var/log` dir. It is where all logs of what has been installed (or basically what changed on the system) are stored. You can `find` them in `/var/log/dpkg.log` and `/varlog/apt/history.log`, those are the files where the logs are recorded.
+
+In addition I focused on other commands related to the file system which are:
+- `tree`        = displays all folders and their sub-folders like a tree (don't use it alone, add `-L ?` to specify how many levels do you want)
+
+  
+- `find`        = it is used to locate files on the system (`find [where to look] [what to look for]`)
+
+  
+- `which`       = used to locate which and where a command is running
+
+  
+- `2>/dev/null` = not really a command but it's used to redirect errors into a "blackhole" so that they don't show on the terminal
+
