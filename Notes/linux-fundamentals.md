@@ -75,7 +75,7 @@ The syntax is as follows:
 - `?` is the number of a process
 
 
-## 3) FILE SYSTEM
+## 3. FILE SYSTEM AND NAVIGATION
 Linux is operates using files and each file has it's own category, from configuration files to personal files.
 
 These are all linux directories and their categories
@@ -104,4 +104,40 @@ In addition I focused on other commands related to the file system which are:
 
   
 - `2>/dev/null` = not really a command but it's used to redirect errors into a "blackhole" so that they don't show on the terminal
+
+## 4. TEXT PROCESSING
+Manupilating text insede files using commands
+
+Command covered here:
+- grep
+- sed
+- awk
+
+#### a) GREP
+`grep` is used to highlight specific texts inside files. You can choose what the output be using flags like `-i`, `-n`, `-v`, and `-c`.
+
+    -i = ignore case
+    -n = return output with its line number
+    -v = ignore all lines containing the word
+    -c = how many times it appears or on how many lines
+
+#### b) SED
+Used to replace words in files. The effects of it are permanent and can't be undone so you have to be carefull using it. You can use `sed` without flags to test and see what the results would be, then use `-i` when you're sure.
+
+- `-i` means "`inplace`", that's what changes the the text in the specified file
+
+Syntax:
+
+    sed 's/old/new/' [targeted file]     // only displays and won't change anything in the file
+    sed -i 's/old/new/' [targeted file]  // changes the file contents
+
+
+#### C) AWK
+`awk` is used to manupilate and format text in files. It's like string manupilation in other languages.
+
+Instead of staring with `0` like normal languages, `awk` starts with `$1` and `$0` is used to return the whole line. You can specify separators using `-F` flag.
+
+    awk -F '{print $1 " - " $2}'  // the defualt way separates based on whitelines and add "-" between each word
+
+    awk -F: '{print $1 " - " $2}' // will separate text based on colons ":" 
 
