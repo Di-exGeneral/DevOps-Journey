@@ -141,3 +141,49 @@ Instead of staring with `0` like normal languages, `awk` starts with `$1` and `$
 
     awk -F: '{print $1 " - " $2}' // will separate text based on colons ":" 
 
+
+## 5. PACKAGE MANAGEMENT AND SERVICES
+
+### a) APT
+Advanced Package Tool used to manage packages on Debian based systems
+
+Most `apt` used commands are: 
+
+    sudo apt update
+    sudo apt upgrade
+    sudo apt install packagename
+    sudo apt remove packagename
+    sudo apt purge packagename
+    sudo apt autoremove
+
+#### The difference between remove, autoremove and purge
+- `remove` only removes the package and keeps its config file
+- `purge` on the other hand removes packages entirely
+- `autoremove` remove all the extra packages that were automatically installed with the package
+
+
+### b) SYSTEMCTL
+System Control is used to manage services
+
+Some of the
+
+    sudo systemctl start servicename     
+    sudo systemctl stop servicename
+    sudo systemctl restart servicename
+    sudo systemctl status servicename
+    sudo systemctl enable servicename 
+    sudo systemctl disable servicename
+
+
+#### The difference between START AND ENABLE
+- `start` starts a service at that moment
+- `enable` tells the system to start automatically on boot
+  
+
+
+
+
+
+
+
+
