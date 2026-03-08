@@ -181,7 +181,15 @@ Some of the
   
 
 
+## 6. NETWORKING BASICS
 
+### a) DNS
+DNS is resposible for translating domain names to IP addresses
+
+- `nslookup` is tool used for querying DNS. It's used to check DNS using your default DNS resolver
+- `nslookup [domain name] [DNS server]` uses the specified server to check DNS
+
+`nslookup [domain name] [DNS server]` is usefull when debugging DNS related issues as you can test against multiple DNS servers to identify the problem
 
 
 
