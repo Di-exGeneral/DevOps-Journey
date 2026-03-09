@@ -182,6 +182,10 @@ Some of the
 
 
 ## 6. NETWORKING BASICS
+### Topics covered
+- DNS
+- HTTP and HTTPS
+- Status Codes
 
 ### a) DNS
 DNS is resposible for translating domain names to IP addresses
@@ -194,4 +198,61 @@ DNS is resposible for translating domain names to IP addresses
 
 
 
+### b) HTTP and HTTPS
+These are ports responsible for communicating with anything on the internet
+
+#### HTTP
+Mostly used locally for testing
+
+#### HTTPS
+It's secure, meaning packets that are intercepted are scrambled and can't be read
+
+### c) STATUS CODES
+These shows what is the cause of something that happend when trying to access something on the internet
+
+Most popular codes are:
+
+- 100s = Informational
+- 200s = Success
+
+        200 = OK, success
+
+- 300s = Redirects
+
+        301 = Moved permanently, redirect
+        302 = Temporary redirect
+
+- 400s = Client Errors
+  
+        400 = Bad request
+        401 = Unauthorised
+        403 = Forbidden
+        404 = Not found
+
+- 500s = Server Errors
+  
+        500 = Internal server error
+        502 = Bad gateway
+        503 = Service unavailable 
+
+
+### Commands covered
+- curl
+- ss
+- ping
+
+#### a) CURL
+Used to make HTTP request
+
+    curl http://website
+
+#### b) SS
+Socket Statistics is used to check port activity
+
+    sudo ss -tulnp
+
+#### c) PING
+Used to test the specified destination by sending ICMP packets
+
+    ping https://website -c 4  //you can specify how many ICMP packets to send
 
