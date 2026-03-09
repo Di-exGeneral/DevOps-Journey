@@ -1,0 +1,12 @@
+
+#!/bin/bash
+
+commit_msg=$(cat "$1")
+
+if [ -z "commit_msg" ]; then 
+	echo "Error: Commit message can't be empty"
+	exit 1
+
+fi
+
+
