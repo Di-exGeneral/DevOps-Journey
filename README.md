@@ -37,6 +37,10 @@ I'll be using Trunk-based development instead of Gitflow for this journey
 #### SCRIPTING
 Created 2 scripts, `disk-alert.sh` to monitor my disk usage and `error-checker.sh` to scan errors through logs
 
+
+#### AUTOMATION
+I aoutomated the `disk-alert.sh` script using cron job
+
 ## Stack
 - Kali Linux
 - AWS Free Tier
