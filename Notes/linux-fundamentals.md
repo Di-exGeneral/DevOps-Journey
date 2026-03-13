@@ -141,6 +141,8 @@ Instead of staring with `0` like normal languages, `awk` starts with `$1` and `$
 
     awk -F: '{print $1 " - " $2}' // will separate text based on colons ":" 
 
+You can use `NR==?` to target a specific row
+
 
 ## 5. PACKAGE MANAGEMENT AND SERVICES
 
