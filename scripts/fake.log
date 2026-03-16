@@ -1,8 +1,0 @@
-INFO: Server started
-INFO: Connection established
-ERROR: Disk write failed
-INFO: User logged in
-ERROR: Memory threshold exceeded
-INFO: Backup completed
-ERROR: Network timeout
-INFO: Server running normally
