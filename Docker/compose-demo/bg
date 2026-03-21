@@ -1,0 +1,11 @@
+Attaching to monitor-1, web-1
+monitor-1  | The storage threshold of 70% have been exceeded. The current usage is 78%
+web-1      | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+web-1      | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+web-1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+web-1      | 10-listen-on-ipv6-by-default.sh: info: IPv6 listen already enabled
+web-1      | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+web-1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+web-1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+web-1      | /docker-entrypoint.sh: Configuration complete; ready for start up
+[Kmonitor-1 exited with code 0

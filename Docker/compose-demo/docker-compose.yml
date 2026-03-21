@@ -1,0 +1,7 @@
+services:
+  web:
+    image: my-nginx
+    ports:
+      - "8080:80"
+  monitor:
+    image: disk-alert
