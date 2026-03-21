@@ -66,6 +66,42 @@ An automation tool used to schedule tasks
 
 ## Phase 4: Containers (Current Phase)
 
+### Core Concepts
+- **Image**: a snapshot of a configured environment, built from a Dockerfile
+- **Container**: a running instance of an image
+- **Dockerfile**: instructions for building an image
+- Relationship: Dockerfile builds an Image, Image runs as a Container
+
+### Dockerfile Instructions
+- `FROM` - base image to start with
+- `RUN` - execute a command during build
+- `COPY` - copy files from host into the image
+- `CMD` - default command when container starts
+
+### Docker Commands
+- `docker build -t name .` - build an image from a Dockerfile
+- `docker run image` - create and start a container
+- `docker run -it image bash` - interactive terminal session
+- `docker run -d -p 8080:80 image` - detached mode with port mapping
+- `docker ps` - show running containers
+- `docker ps -a` - show all containers including stopped
+- `docker images` - list local images
+- `docker stop id` - stop a running container
+- `docker rm id` - remove a container
+- `docker rmi image` - remove an image
+
+### Docker Compose
+- Manages multiple containers as a single application
+- Defined in `docker-compose.yml` using YAML
+- `docker-compose up` - start all services
+- `docker-compose down` - stop and remove all services
+- Common keys: `image`, `ports`, `volumes`, `environment`, `depends_on`, `build`
+
+### Projects
+- `disk-alert` - containerised disk alert bash script using Alpine
+- `nginx-demo` - custom Nginx container serving a static HTML page
+- `compose-demo` - multi container setup using Docker Compose
+
 ## Stack
 - Kali Linux
 - AWS Free Tier
